@@ -30,6 +30,6 @@ app.route("/fruit", fruits);
 app.use("/user", users);
 app.route("/user", users);
 
-let server = https.createServer(options,app)
+let server = http.createServer(app)
 console.log(PORT)
 server.listen(PORT);
